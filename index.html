@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Pig Game</title>
+</head>
+
+<body>
+  <main>
+    <section id="player--0" class="player player--0 player--active">
+      <h2 class="name prvi" id="name--0">Igrač 1</h2>
+      <p class="score" id="score--0">0</p>
+      <div class="current">
+        <p class="current-label">Trenutno</p>
+        <p class="current-score" id="current--0">0</p>
+      </div>
+    </section>
+    <section id="player--1" class="player  player--1">
+      <h2 class="name drugi" id="name--1">Igrač 2</h2>
+      <p class="score" id="score--1">0</p>
+      <div class="current">
+        <p class="current-label">Trenutno</p>
+        <p class="current-score" id="current--1">0</p>
+      </div>
+    </section>
+
+    <img id="dice" src="dice-5.png" alt="Playing dice" class="dice hidden" />
+    <button id="btn--new" class="btn btn--new">🔄 Nova Igra</button>
+    <button id="btn--roll" class="btn btn--roll">🎲 Zavrti</button>
+    <button id="btn--hold" class="btn btn--hold">📥 Zadrži</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
