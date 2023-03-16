@@ -41,7 +41,7 @@ btnHold.addEventListener('click', function (e) {
   e.preventDefault();
   //Add current score to active player score
   scores[activePlayer] += currentScore;
-  if (scores[activePlayer] < 10) {
+  if (scores[activePlayer] < 100) {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
@@ -84,8 +84,8 @@ btnNew.addEventListener('click', function (e) {
   scores = [0, 0];
   currentScore = 0;
 });
-// const prviIgrac = prompt('Upišite Prvog Igrača', 'Prvi');
-// const drugiIgrac = prompt('Upišite Prvog Igrača', 'Drugi');
+const prviIgrac = prompt('Upišite Prvog Igrača', 'Prvi');
+const drugiIgrac = prompt('Upišite Prvog Igrača', 'Drugi');
 
-// prvi.textContent = prviIgrac;
-// drugi.textContent = drugiIgrac;
+prvi.textContent = prviIgrac;
+drugi.textContent = drugiIgrac;
